@@ -15,3 +15,35 @@ class Team(models.Model):
     
     def __str__(self):
         return f'{self.name} - {self.profession} - {self.image}'
+    
+class TopDescH(models.Model):
+    description = models.TextField(verbose_name = 'Descrição')
+    
+    def __str__(self):
+        return f'{self.description}'
+    
+class PlatformDesc(models.Model):
+    description = models.TextField(verbose_name = 'Descrição')
+    
+    def __str__(self):
+        return f'{self.description}'
+    
+class Button(models.Model):
+    urls = models.URLField(max_length=200, verbose_name='Saiba mais urls')
+
+    def __str__(self):
+        return f'{self.urls}'
+    
+class ForumItens(models.Model):
+    image = models.ImageField(upload_to = 'images/', verbose_name = 'Imagem')
+    description = models.TextField(verbose_name = 'Descrição')
+
+    def __str__(self):
+        return f'{self.description} - {self.image}'
+     
+class SupportMaterial(models.Model):
+    image = models.ImageField(upload_to = 'images/', verbose_name = 'Imagem')
+    description = models.TextField(verbose_name = 'Descrição')
+
+    def __str__(self):
+        return f'{self.description} - {self.image}'
