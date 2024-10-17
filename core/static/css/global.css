@@ -228,7 +228,7 @@ div.columnsContainer .footerColumn {
     transform: translateX(-50%);
     width: 75px; 
     height: 30px;
-    background-image: url('/assets/imgs/navbar/wave.svg');        
+    background-image: url('/static/imgs/navbar/wave.svg');        
     background-position: top;
     background-size: contain;
     background-repeat: no-repeat;

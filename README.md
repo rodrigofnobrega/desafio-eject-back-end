@@ -66,25 +66,42 @@ A estrutura básica do projeto está organizada da seguinte forma:
 3. Crie a venv:
 
 `python -m venv ./venv`
+
+4. Ative o venv
+
+- Linux:
+
 `source venv/bin/activate`
 
-4. Instale as dependências:
+- Windows PowerShell:
+
+`.\venv\Scripts\Activate.ps1`
+
+- Prompt de Comando (cmd):
+
+`venv\Scripts\activate.bat`
+
+- Git bash:
+
+`source '/caminho/para/seu/desafio-eject-back-end/venv/Scripts/activate'`
+
+5. Instale as dependências:
 
 `pip install -r requirements.txt`
 
-5. Aplique as migrações:
+6. Aplique as migrações:
 
 `python manage.py migrate`
 
-6. Crie um superusuário:
+7. Crie um superusuário:
 
 `python manage.py createsuperuser`
 
-7. Execute o servidor de desenvolvimento:
+8. Execute o servidor de desenvolvimento:
 
 `python manage.py runserver`
 
-8. Acesse o projeto:
+9. Acesse o projeto:
 
 `http://127.0.0.1:8000/`
 
